@@ -74,6 +74,10 @@ Request body example of `"text_and_image"` model
 }
 ```
 
+Using cURL you can achieve this in your console provided that you have everything configured as above:
+
+curl -i -X POST -H 'Content-Type: application/json' -d '{"modelType": "text_only","prompt": "What can you do for me?"}' http://localhost:3000/chat-with-gemini
+
 ## Integration with Frontend
 
 To implement the views, you can integrate any frontend library of your choice, such as ReactJs, Swelte, etc.
